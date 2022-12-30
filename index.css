@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: hsl(205, 65%, 87%);
+  padding-top: 3rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+img:not(.logo) {
+  width: 100%;
+}
+
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.product {
+  padding-bottom: 5rem;
+}
+.app_title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e75915;
+}
+.underline {
+  width: 7rem;
+  height: 0.25rem;
+  background: hsl(211, 39%, 23%);
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-links {
+  background-color: transparent;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.btn-links a {
+  text-decoration: none;
+  color: black;
+  padding: 16px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 15px;
+  transition: background-color 5s, color 2s;
+}
+.btn-links a:hover {
+  color: #fff;
+  background: blueviolet;
+}
+.colorfulBand {
+  display: flex;
+  flex-direction: row;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    #7622da 11%,
+    #47c6eb 11%,
+    #47c6eb 29%,
+    #ed5f1f 29%,
+    #ed5f1f 60%,
+    #f59f28 60%,
+    #f59f28 75%,
+    #6b1e5b 75% 88%,
+    #45b794 88%,
+    #45b794 100%
+  );
+}
+
+.section-center {
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+  margin-top: 250px;
+  width: 95vw;
+  grid-template-columns: 1fr 1fr;
+}
+.product-item {
+  display: grid;
+  position: relative;
+  padding: 15px;
+  border: 1px solid rgb(208, 203, 203);
+  border-radius: 15px;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.25rem;
+}
+.product-item:hover {
+  background-color: rgb(208, 203, 203);
+  transition: all 0.3s linear;
+}
+.photo {
+  height: 175px;
+  border: 2px solid rgb(230, 152, 7);
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.item-title {
+  border-bottom: 0.5px dashed hsl(210, 22%, 49%);
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.item-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
